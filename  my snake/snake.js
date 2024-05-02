@@ -104,7 +104,7 @@ function gameLoop() {
 }
 
 // new
-function handleKeyPress(event) {
+function pressKey(event) {
   switch (event.key) {
     case ' ':
     case 'Space':
@@ -130,7 +130,7 @@ function handleKeyPress(event) {
   }
 }
 
-document.addEventListener('keydown', handleKeyPress);
+document.addEventListener('keydown', pressKey);
 
 function checkHit() {
   // Get the coordinates of the snake's head
