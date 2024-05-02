@@ -1,0 +1,77 @@
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+  padding: 40px 60px; 
+}
+body {
+  background: lightblue;
+}
+* {
+  margin: 4;
+  padding: 4;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+footer {
+  border: 1px solid rgb(0, 33, 116);
+  background-color: black;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  font-weight: bold;
+  padding: 0px 10px 0px 10px;
+  color: white;
+}
+
+header {
+  border: 1px solid rgb(0, 33, 116);
+  background-color: black;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  padding: 0px 10px 0px 10px;
+  color: white;
+}
+
+
+body, html {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.container img {
+  width: 300px;
+  height: auto;
+}
+
+.mainGame {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.game {
+  margin: 10px;
+  text-align: center;
+}
+
+.game p {
+  width: 200px; /* Set the width of the description box */
+  margin-top: 10px; /* Add spacing between image and description */
+}
+
+.game img {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 200px; /* Set the width of all images */
+  height: 200px; /* Set the height of all images */
+  object-fit: cover; /* Ensure the images maintain aspect ratio and cover the entire space */
+}
+
