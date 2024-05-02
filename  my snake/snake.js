@@ -25,8 +25,6 @@ function draw() {
   updateScore();
 }
 
-
-// NEW 
 function drawSnake() {
   snake.forEach((segment) => {
     const snakeElement = document.createElement('div');
@@ -34,12 +32,10 @@ function drawSnake() {
     snakeElement.style.gridColumn = segment.x;
     snakeElement.style.gridRow = segment.y; 
     board.appendChild(snakeElement);
-
     // id("game-board").appendChild(snakeElement);
   });
 }
 
-// NEW 
 function drawFood() {
   if (gameActive) {
     const foodElement = document.createElement('div');
@@ -51,7 +47,6 @@ function drawFood() {
   }
 }
 
-// new 
 function randomFood() {
   const randVar = Math.random()* gridSize
   const x = Math.ceil(randVar);
@@ -90,7 +85,6 @@ function move() {
   }
 }
 
-// NEW 
 // Start game function
 function startGame() {
   gameActive = true; // Keep track of a running game
@@ -103,40 +97,11 @@ function startGame() {
   gameInterval = setInterval(gameLoop, gameSpeedDelay);
 }
 
-// new
 function gameLoop() {
   move();
   checkHit();
   draw();
 }
-
-// Keypress event listener
-/*
-function handleKeyPress(event) {
-  if (
-    (!gameStarted && event.code === 'Space') ||
-    (!gameStarted && event.key === ' ')
-  ) {
-    startGame();
-  } else {
-    switch (event.key) {
-      case 'ArrowUp':
-        direction = 'up';
-        break;
-      case 'ArrowDown':
-        direction = 'down';
-        break;
-      case 'ArrowLeft':
-        direction = 'left';
-        break;
-      case 'ArrowRight':
-        direction = 'right';
-        break;
-    }
-  }
-}
-*/
-
 
 // new
 function handleKeyPress(event) {
@@ -167,7 +132,6 @@ function handleKeyPress(event) {
 
 document.addEventListener('keydown', handleKeyPress);
 
-// NEW
 function checkHit() {
   // Get the coordinates of the snake's head
   const headX = snake[0].x;
@@ -186,7 +150,6 @@ function checkHit() {
   }
 }
 
-
 function resetGame() {
   stopGame();
   snake = [{ x: 10, y: 10 }];
@@ -196,7 +159,6 @@ function resetGame() {
   updateScore();
 }
 
-// NEW
 function updateScore() {
   score.textContent = '00' + (snake.length - 1);
 }
