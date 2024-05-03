@@ -4,6 +4,8 @@ canvas.width = 800;
 canvas.height = 600;
 let gameStart = false;
 
+
+// load start screen on opening window
 window.onload = function() {
     drawStartScreen();
 }
