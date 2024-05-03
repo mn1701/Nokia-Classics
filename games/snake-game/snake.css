@@ -24,7 +24,6 @@ body {
 
 .game-border-1 {
   border: #344713 solid 10px;
-  border-radius: 0px;
   box-shadow: inset 0 0 10px #0f380f;
 }
 

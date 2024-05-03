@@ -46,6 +46,7 @@ function startGame() {
             this.y = canvas.height - this.height - 20;
             this.speed = 5;
             this.dx = 0; // movement in x axis
+            this.dy = 0; // movement in y axis
             this.image = new Image();
             this.image.src = '../../images/ship.png';
             // Reference: Minh Nguyen's self produced
@@ -59,12 +60,16 @@ function startGame() {
         update() {
             this.x += this.dx;
             this.checkBoundary();
+
+            this.y += this.dy;
         }
     
         checkBoundary() {
             // set boundaries of game area
             if (this.x < 0) this.x = 0;
             if (this.x + this.width > canvas.width) this.x = canvas.width - this.width;
+            if (this.y < canvas.height - 200) this.y = canvas.height - 200;
+            if (this.y + this.height > canvas.height) this.y = canvas.height - this.height;
         }
     }
     
@@ -140,6 +145,10 @@ function startGame() {
             player.dx = player.speed;
         } else if (e.key === 'ArrowLeft' || e.key === 'Left') {
             player.dx = -player.speed;
+        } else if (e.key === "ArrowUp" || e.key === "Up") {
+            player.dy = -player.speed;
+        } else if (e.key === "ArrowDown" || e.key === "Down") {
+            player.dy = player.speed; 
         }
     }
     
@@ -147,6 +156,9 @@ function startGame() {
         if (e.key === 'ArrowRight' || e.key === 'Right' ||
             e.key === 'ArrowLeft' || e.key === 'Left') {
             player.dx = 0;
+        } else if (e.key == "ArrowUp" || e.key == "ArrowDown" || 
+                   e.key == "Up" || e.key == "Down") {
+            player.dy = 0;
         }
     }
     
