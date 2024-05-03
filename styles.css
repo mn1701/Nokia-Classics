@@ -24,7 +24,7 @@ header h1 {
 }
 
 .game-box {
-  width: 200px;
+  width: 350px;
   border: 1px solid #9bbc0f;
   padding: 10px;
   background-color: #728928;
@@ -51,4 +51,9 @@ header h1 {
 
 .game-box p {
   font-size: 0.8em;
+}
+
+.game-box .imgs {
+  width: 70%;  
+  max-height: 250px;
 }
