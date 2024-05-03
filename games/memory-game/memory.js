@@ -1,4 +1,4 @@
-const emojis = ['🌟', '🎉', '💡', '🍕', '🚀', '🎨','🌟', '🎉', '💡', '🍕', '🚀', '🎨','💻','💻','😊','😊'];
+const emojis = ['𖦹', '𖦹', '✦', '✦', 'ꕤ', 'ꕤ','♥︎', '♥︎', '𖣯', '𖣯', '♛', '♛','☕︎','☕︎','𓅪','𓅪'];
 const timeDelay = 600;
 var shuf_emojis = emojis.sort(() => 0.5 - Math.random());
 document.getElementById("button").addEventListener("click", function() {
@@ -28,7 +28,7 @@ function checkMatch() {
    const secondBox = openBoxes[1]; // Get the second open box
 
    if (firstBox.innerHTML === secondBox.innerHTML) {
-     // Match found, handle it here
+     // Match found
      firstBox.classList.add('boxMatch');
      secondBox.classList.add('boxMatch');
 

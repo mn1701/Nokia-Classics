@@ -1,55 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Arcade</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-      <div class="container">
-        <header>
-          <h2>Game Arcade</h2>
-        </header>
-        <main>
-        <div class="mainGame">
-          <div class="game">
-            <a href="https://www.google.com/">
-              <img src="images/memory.png" alt="Game 1">
-            </a>
-            <p>
-              Memory Game is a classic game where you can challenge your memory by exploring two same images until you finish all the images.
-            </p>    
-          </div>
-
-          <div class="game">
-            <a href="https://www.youtube.com/">
-              <img src="images/snake.png" alt="Game 2">
-            </a>
-            <p>
-              Snake Game is a classic game where you can challenge your skills using arrows and how fast you react to avoid the collision of snake.
-            </p>
-          </div>
-
-          <div class="game">
-            <a href="https://www.youtube.com/">
-              <img src="images/tic.png" alt="Game 3">
-            </a>
-            <p>
-              Memory Game is a classic game where you can challenge your memory by exploring two same images until you finish all the images.
-            </p>
-          </div>
-
-        </div>    
-      <script src="script.js" charset="utf-8"></script>  
-    </main>  
+    <title>Nokia Game Classics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Nokia Classics</h1>
+    </header>
+    <div class="game-container">
+        <div class="game-box" onclick="location.href='games/snake-game/snake.html';">
+            <img src="images/snake 1.png" alt="Snake Game">
+            <!-- Reference: https://www.deviantart.com/yellow-xrose/art/Snake-pixel-art-600189574 -->
+            <h2>Snake</h2>
+            <p>Navigate the snake to eat food and grow longer while avoiding the walls and its own tail!</p>
+        </div>
+        <div class="game-box" onclick="location.href='games/memory-game/memory.html';">
+            <img src="images/brain.jpg" alt="Memory Matching Game">
+            <!-- Reference: https://in.pinterest.com/pin/brain-brain-icon-png-flyclipart--992691942838454631/ -->
+            <h2>Memory Matching</h2>
+            <p>Challenge your memory with this matching game! Where you explore and match all images until you have found all pairs!</p>
+        </div>
+        <div class="game-box" onclick="location.href='bounce.html';">
+            <img src="images/bounce.jpg" alt="Bounce">
+            <h2>Bounce</h2>
+            <p>Navigate through levels by bouncing the red ball through obstacles and collecting rings.</p>
+        </div>
+        <!-- More games can be added similarly -->
+        
+    </div>
     <footer>
       <p>Copyright &copy; 2024 Game Arcade</p>
-    </footer>
-  </div>
-  </body>
+  </footer>
+</body>
 </html>
-
-
-
-
