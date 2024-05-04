@@ -15,6 +15,6 @@ In the Memory game, it was hard to have the correct size for the container that 
 
 Minh's experience with Space Shooter and Sudoku implementation:
 
-Implementing Space Shooter was a fun, but also painful experience for me, as I had to navigate and keep track of multiple variables and deal with multiple instances of the game running at the same time. But after completing, I am more well equipped with knowledge surrounding javascript programming.
+Implementing Space Shooter was a fun, but also painful experience for me, as I had to navigate and keep track of multiple variables for the player, enemy, and bullet models. I also spent a lot of time dealing with overlapping instances of the game running at the same time. But after completing and fixing all the bugs, I am more well equipped with knowledge surrounding javascript programming.
 
-For the adoption of the open-source Sudoku javascript game, I had an enjoyable time using the predefined functions and implementing them into our website, and styling them accordingly to the theme. Reading through the source code and understanding them is very helpful, equipping me with neat javascript tricks and techniques for my future projects.
+For the adoption of the open-source Sudoku javascript game, I had an enjoyable time using the predefined functions and implementing them into our HTML file, and styling them according to the theme. Reading through the source code and understanding them is very helpful, equipping me with neat javascript tricks and techniques for my future projects.
