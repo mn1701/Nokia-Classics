@@ -1,20 +1,48 @@
-Working with DOM, classList, events, timers of Javascript
 
-The theme we went with is Nokia Classics, featuring 4 games: Snake, Pairs, Space Shooter, and Sudoku.
-Since the theme is Nokia Classics, our design choices reflect those of old Nokia phones, giving off a nostalgic vibe, including a monotone color palette, pixelated font, etc.
+# Nokia Classics - Arcade Website
 
-Snake, Pairs, and Space Shooter were our original games, and Sudoku was an adoption of an open-source javascript game with an MIT license. 
+A retro-themed arcade website featuring classic games inspired by the Nokia phone era. This project includes a collection of simple, fun games styled to reflect the nostalgic feel of early mobile gaming. Built using **HTML**, **CSS**, and **JavaScript**, the website offers a retro arcade experience through games such as **Memory Matching Icon Game**, **Snake**, **Sudoku**, and **Space Shooter**.
 
-However, we encountered a number of obstacles while trying to implement the games, here are our personal experiences.
+## Table of Contents
+- [Features](#features)
+- [Games Included](#games-included)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+- [Project Structure](#project-structure)
 
-Tran's experience with the Snake and Pairs games:
+## Features
+- **Retro Design**: A classic **Nokia phone-inspired** look and feel, evoking the iconic arcade style.
+- **Multiple Games**: Enjoy four different games with unique mechanics, each offering a different kind of fun.
+- **Responsive Design**: Optimized for various screen sizes, ensuring that the retro experience works well on desktop and mobile devices.
+- **Smooth Game Play**: Fast and responsive controls, ensuring an engaging experience for players.
+- **Customizable Themes**: Retro-inspired themes with arcady fonts and colors.
 
-There is some difficulty when I work on Snake game since there was a few times the snake hits the border, which is the boundaries but the snake is still alive. I need to work on the size and structure of the border to make sure when the snake hit the boundaries, the user will lose. I have also learned and practicing using spread function to copy the original snake but not modify it, and learn how to use setInterval. Furthermore, I need to understand how the snake moves and how to make it move from the original position because the axis of the border start at 0, and cannot put the snake at the original axis which is x=0, y=0. That could make the user struggle playing the game right at the beginning. Put the orginial position of the snake at x=10, y=10 is better since it is in the middle of the board game as my board game size is 20. 
+## Games Included
+1. **Memory Matching Icon Game**: A simple and fun game where users match pairs of icons. Sharpen your memory and test how fast you can find all the pairs!
+2. **Snake Game**: A nostalgic classic. Control the snake as it grows longer with every food piece eaten, but be careful not to crash into the walls or yourself!
+3. **Sudoku**: A retro-styled version of the timeless puzzle game, where players fill a 9x9 grid with numbers without repeating any in rows, columns, or grids.
+4. **Space Shooter**: Blast away alien invaders in this fast-paced space shooter game. Move your ship to dodge enemies and shoot them down as you progress through levels.
 
-In the Memory game, it was hard to have the correct size for the container that can contains all the images that can fit the screen. Also have experience working with setTimeout, which is very useful for this Memory game. Futhermore, using classList can be so efficient and powerful in this game since it can keep track the match box to know which ones we get correct already and remove the open box as long as we finish checking two boxes which does not matter if those two boxes are match or not. Continue this process until the user find all of the match box. 
+## Installation
+1. Clone this repository to your local machine:
+   ```bash
+   git clone https://github.com/your-username/nokia-classics.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd nokia-classics
+   ```
+3. Open the `index.html` file in your preferred browser to start playing the games.
 
-Minh's experience with Space Shooter and Sudoku implementation:
+## Usage
+- Once you open the website, select one of the games from the main menu.
+- Controls for each game are intuitive and optimized for both keyboard and mouse input.
+  - **Snake**: Use the arrow keys to move the snake.
+  - **Space Shooter**: Use the arrow keys to move and the spacebar to shoot.
+  - **Memory Game and Sudoku**: Simply click on the tiles or numbers to interact.
 
-Implementing Space Shooter was a fun, but also painful experience for me, as I had to navigate and keep track of multiple variables for the player, enemy, and bullet models. I also spent a lot of time dealing with overlapping instances of the game running at the same time. But after completing and fixing all the bugs, I am more well equipped with knowledge surrounding javascript programming.
-
-For the adoption of the open-source Sudoku javascript game, I had an enjoyable time using the predefined functions and implementing them into our HTML file, and styling them according to the theme. Reading through the source code and understanding them is very helpful, equipping me with neat javascript tricks and techniques for my future projects.
+## Technologies Used
+- **HTML5**: For structuring the content and layout of the website.
+- **CSS3**: For designing the retro aesthetic, including pixelated fonts, arcade colors, and responsive design elements.
+- **JavaScript**: For implementing the game logic, including interactivity, controls, and game state management.
